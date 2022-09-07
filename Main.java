@@ -15,7 +15,7 @@ public class Main {
         int tarih = scanner.nextInt();
         System.out.println("Muzik Notunuzu Giriniz");
         int Muzik = scanner.nextInt();
-        
+        scanner.close();
         double toplam = (mat+fizik+kimya+tarih+turkce+Muzik)/6;
         System.out.print(toplam >= 60 ? "Geçti":"Kaldı");
 
