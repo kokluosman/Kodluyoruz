@@ -7,6 +7,7 @@ public class EbobEkok {
         int say1 = scanner.nextInt();
         System.out.println("2. Sayıyı Giriniz.");
         int say2 = scanner.nextInt();
+        scanner.close();
         int ebob =1;
         int ekok =1;
         for (int i = 1; i <=say1; i++) {
