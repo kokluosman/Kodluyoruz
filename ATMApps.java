@@ -45,6 +45,7 @@ public class ATMApps {
 
                 }else{
                 System.out.println("Yanlış Şifre Girdiniz. Tekrar deneyiniz");
+                scanner.close();
                 }
             }
         }
