@@ -1,7 +1,7 @@
 public class Palidrom {
     public static void main(String[] args) {
         
-        System.out.println(isPalindrom(2002));
+        System.out.println(" " + isPalindrom(2002));
 
     }
 
