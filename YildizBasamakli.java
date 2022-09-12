@@ -5,7 +5,7 @@ public class YildizBasamakli {
         Scanner input=new Scanner(System.in);
 
         int n;
-        System.out.print("Basamak sayısını girin :");
+        System.out.print("Basamak gir:");
         n=input.nextInt();
 
         System.out.println("");
