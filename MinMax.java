@@ -24,6 +24,7 @@ public class MinMax {
                 min = i;
             }
         }
+        scanner.close();
         System.out.println("------------");
         System.out.println(arrayList);
         System.out.println("Min Değer:"+min+"\nMax Değer:"+max);
