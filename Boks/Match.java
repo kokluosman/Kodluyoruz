@@ -22,8 +22,13 @@ public class Match {
 
             while(this.fighter1.health>0 && this.fighter2.health>0){
                 this.fighter2.health = this.fighter1.hit(this.fighter2);
-                System.out.println(this.fighter2.health);
-                
+                if(isWin()){
+                    break;
+                }
+                this.fighter1.health  = this.fighter2.hit(this.fighter1);
+                if(isWin()){
+                    break;
+                }
             }
 
 
@@ -34,6 +39,18 @@ public class Match {
 
     boolean isCheck(){
         return((this.fighter1.weight>=minWeight && this.fighter1.weight<=maxWeight) && (this.fighter2.weight>=minWeight && this.fighter2.weight<=maxWeight));
+    }
+
+    boolean isWin(){
+        if(this.fighter1.health==0){
+            System.out.println(fighter2.name + " Kazandı" );
+            return true;
+        }else if(this.fighter2.health == 0){
+            System.out.println(this.fighter1.name + " Kazandı");
+            return true;
+        }else {
+            return false;
+        }
     }
 
 }

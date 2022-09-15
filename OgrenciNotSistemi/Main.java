@@ -10,6 +10,7 @@ public class Main {
         Course fizik = new Course("Fizik","101","FZK");
         fizik.addTeacher(t2);
         Course biyo = new Course("Biyoloji", "101", "BIO");
+        biyo.addTeacher(t3);
         Student s1 = new Student("İnek Şaban", "123", "4", tarih, fizik, biyo);
         s1.addBulkExamNote(90, 200, 50);
         s1.printNote();
