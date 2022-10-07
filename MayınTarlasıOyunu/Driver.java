@@ -5,15 +5,21 @@ import java.util.Scanner;
 public class Driver {
     
         public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Minesweeper game ! \n" +
-                    "enter the size of the field, for example: (5 4) : ");
-            int x , y ;
-            x = scanner.nextInt();
-            y = scanner.nextInt();
-            MineSweeper mineSweeper = new MineSweeper(x, y);
-            mineSweeper.run();
-            scanner.close();
+                Scanner scanner = new Scanner(System.in);
+                int data;
+                try{
+                    int x = scanner.nextInt();
+                    int y = scanner.nextInt();
+                    data = x/y;
+                    System.out.println(data);
+                }catch(Exception e){
+                    System.out.println(e.toString());
+                }//catch(ArithmeticException e){
+                    //System.out.println(e.getMessage());
+               // }
+                
         }
+
+
     
 }
